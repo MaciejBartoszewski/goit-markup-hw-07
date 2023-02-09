@@ -1,0 +1,34 @@
+.section__card {
+  padding-bottom: 0;
+}
+.card {
+  display: flex;
+  gap: 30px;
+  &__item {
+    flex-basis: calc((100% - 3 * 30px) / 4);
+    padding-top: 10px;
+    &-icon {
+      all: unset;
+      background-color: var(--lorem-color);
+      border-radius: 4px;
+      padding: 25px 100px;
+    }
+    &-title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--dark-color);
+      padding-bottom: 10px;
+      padding-top: 30px;
+    }
+    &-excerpt {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.03em;
+      color: var(--gray-color);
+    }
+  }
+}
