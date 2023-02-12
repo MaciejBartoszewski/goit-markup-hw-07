@@ -7,7 +7,7 @@
   flex-wrap: wrap;
   gap: 30px;
   justify-content: space-between;
-  &__employees {
+  &__employee {
     max-width: 270px;
     height: 428px;
     background: var(--white-color);
@@ -15,28 +15,28 @@
       0 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0 0 4px 4px;
     flex-basis: calc((100% - 3 * 30px) / 4);
-    .team__card {
-      padding-top: 30px;
-      text-align: center;
-      &-name {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 19px;
-        letter-spacing: 0.03em;
-        color: var(--dark-color);
-        text-transform: capitalize;
-        display: flex;
-        justify-content: center;
-      }
-    }
   }
-}
-.team__card-links {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  margin: 16px 32px 30px;
-  .social__item {
+  &__card {
+    padding-top: 30px;
+    text-align: center;
+  }
+  &__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: var(--dark-color);
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+  }
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 16px 32px 30px;
+  }
+  &__item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,18 +45,26 @@
     border-radius: 50%;
     &:hover,
     &:focus {
-      background-color: var(--blue-color);
-      fill: var(--white-color);
-    }
-    &-icon {
-      display: flex;
-      width: 20px;
-      height: 20px;
-      fill: var(--light-gray-color);
-    }
+    background-color: var(--blue-color);
+    fill: var(--white-color);
+}
+  }
+  &__icon {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    fill: var(--light-gray-color);
+  }
+  &__title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: var(--gray-color);
+    text-transform: capitalize;
   }
 }
-a.social__item:hover svg,
-a.social__item:focus svg {
+a.team__item:hover svg,
+a.team__item:focus svg {
   fill: var(--white-color);
 }

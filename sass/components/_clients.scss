@@ -1,8 +1,9 @@
-.list__icons {
+.clients {
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  &-logo {
+
+  &__logo {
     fill: #afb1b8;
     border: 1px solid #afb1b8;
     border-radius: 4px;
@@ -10,10 +11,10 @@
     height: 92px;
     padding: 16px 32px;
     cursor: pointer;
-  }
-  &-logo:hover,
-  &-logo:focus {
-    fill: var(--blue-color);
-    border: 1px solid var(--blue-color);
+    &:hover,
+    &:focus {
+  fill: var(--blue-color);
+  border: 1px solid var(--blue-color);
+}
   }
 }
