@@ -49,15 +49,15 @@
     color: var(--gray-color);
     text-transform: capitalize;
   }
-}
-.project__overlay > .project__title {
-  color: var(--white-color);
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.55;
-  padding: 49px 45px 49px 24px;
-}
-.project__list:hover .project__overlay,
-.project__list:focus .project__overlay {
-  transform: translateY(-100%);
+  &__overlay > &__title {
+    color: var(--white-color);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    padding: 49px 45px 49px 24px;
+  }
+  &__list:hover &__overlay,
+  &__list:focus &__overlay {
+    transform: translateY(-100%);
+  }
 }

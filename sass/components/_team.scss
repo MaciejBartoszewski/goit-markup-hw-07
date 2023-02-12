@@ -44,6 +44,10 @@
       background-color: var(--blue-color);
       fill: var(--white-color);
     }
+    &:hover svg,
+    &:focus svg {
+      fill: var(--white-color);
+    }
   }
   &__icon {
     display: flex;
@@ -59,8 +63,4 @@
     color: var(--gray-color);
     text-transform: capitalize;
   }
-}
-a.team__item:hover svg,
-a.team__item:focus svg {
-  fill: var(--white-color);
 }
