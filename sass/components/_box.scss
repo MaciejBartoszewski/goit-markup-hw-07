@@ -6,11 +6,11 @@
   &__card {
     flex-basis: calc((100% - 2 * 45px) / 3);
   }
-  
+
   &__label {
     position: relative;
   }
-  
+
   &__title {
     position: absolute;
     bottom: 3px;
@@ -26,4 +26,4 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
   }
- }
+}

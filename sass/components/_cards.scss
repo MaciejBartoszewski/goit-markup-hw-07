@@ -1,14 +1,11 @@
-.section__card {
-  padding-bottom: 0;
-}
 .card {
   display: flex;
   gap: 30px;
   justify-content: space-between;
-  
+
   &__item {
     padding-top: 10px;
-   }
+  }
   &__icon {
     all: unset;
     background-color: var(--lorem-color);

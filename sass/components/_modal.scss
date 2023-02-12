@@ -12,7 +12,7 @@
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: fixed;
 }
-.modal__ishidden {
+.modal__is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
@@ -56,10 +56,10 @@
     margin-bottom: 10px;
     &:focus-within,
     &:hover svg {
-    fill: var(--blue-color);
-    stroke: var(--blue-color);
-    border-color: var(--blue-color);
-}
+      fill: var(--blue-color);
+      stroke: var(--blue-color);
+      border-color: var(--blue-color);
+    }
   }
   &__types {
     display: block;
@@ -79,10 +79,10 @@
     transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 3;
     & svg {
-    fill: var(--blue-color);
-    stroke: var(--blue-color);
-    border-color: var(--blue-color);
-}
+      fill: var(--blue-color);
+      stroke: var(--blue-color);
+      border-color: var(--blue-color);
+    }
   }
   &__inputs {
     width: 448px;
@@ -97,10 +97,10 @@
     &:hover svg,
     &:focus,
     &:hover {
-    border-color: var(--blue-color);
-    fill: var(--blue-color);
-    outline: none;
-}
+      border-color: var(--blue-color);
+      fill: var(--blue-color);
+      outline: none;
+    }
   }
   &__textarea {
     display: block;
@@ -117,13 +117,13 @@
     resize: none;
     &:hover,
     &:focus {
-    border-color: var(--blue-color);
-    fill: var(--blue-color);
-    outline: none;
-    &::placeholder {
-      color: rgba(117, 117, 117, 0.5);
+      border-color: var(--blue-color);
+      fill: var(--blue-color);
+      outline: none;
+      &::placeholder {
+        color: rgba(117, 117, 117, 0.5);
+      }
     }
-}
   }
   &__submit {
     background-color: var(--blue-color);

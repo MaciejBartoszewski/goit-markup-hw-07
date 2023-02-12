@@ -17,36 +17,25 @@ a {
 }
 .container {
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 .section {
   padding: 94px 0;
-}
-.section__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--dark-color);
-  padding-bottom: 50px;
-}
-.header {
-  background: var(--white-color);
-  border-bottom: 1px solid #ececec;
-  font-family: var(--roboto);
-}
-.page-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 24px 0 25px;
-}
-.footer {
-  background: #2f303a;
-  padding: 60px 0;
-  color: var(--white-color);
-}
-.footer-page {
-  display: flex;
-  justify-content: space-between;
+  &--title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--dark-color);
+    padding-bottom: 50px;
+  }
+  &--card {
+    padding-bottom: 0;
+  }
+  &--team {
+    padding: 94px 0;
+    background-color: #f5f4fa;
+  }
 }

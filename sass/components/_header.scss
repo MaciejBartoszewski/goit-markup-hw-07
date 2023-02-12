@@ -1,15 +1,12 @@
-.logo {
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
-  font-family: var(--family);
-  color: var(--blue-color);
-  padding-right: 47px;
-
-  &--dark {
-    color: var(--black-color);
-  }
+.header {
+  background: var(--white-color);
+  border-bottom: 1px solid #ececec;
+  font-family: var(--roboto);
+}
+.header-page {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0 25px;
 }
 .navigation {
   display: flex;
@@ -52,22 +49,21 @@
     letter-spacing: 0.02em;
     color: var(--gray-color);
     cursor: pointer;
-    &:focus 
-    &:hover {
-    fill: var(--blue-color);
-  }
+    &:focus &:hover {
+      fill: var(--blue-color);
+    }
     &:hover,
     &:focus,
     &:active {
-    color: var(--blue-color);
+      color: var(--blue-color);
+    }
   }
-}
-  &__icons {
+  &__icon {
     fill: var(--gray-color);
     &:focus,
     &:hover,
     &:active {
-    fill: var(--blue-color);
+      fill: var(--blue-color);
+    }
   }
-}
 }
